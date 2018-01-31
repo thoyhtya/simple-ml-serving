@@ -17,5 +17,5 @@ def classify():
         return json.dumps(result), 200
     except Exception as e:
         return repr(e), 500
-app.run(host='127.0.0.1',port=12480 if len(unparsed) == 0 else int(unparsed[0]))
+app.run(host='0.0.0.0',port=12480)
 
